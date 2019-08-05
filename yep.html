@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <script src="https://cdn.bootcss.com/vue/2.6.10/vue.min.js"></script>
+    </head>
+  <body>
+    <div id="app">
+      <h1>{{msg}}</h1>
+      <button @click='fun()' :style='thisstyle'>
+        Click
+      </button>
+      <div v-for='item in list'>
+        <h2 v-if='item.age >18 '>
+          {{item.name}}
+          {{item.age}}
+        </h2>
+      </div>
+    </div>
+    <script type="text/javascript">
+    var app = new Vue({
+      el:'#app',
+      data:{
+        msg:'Hello World',
+        thisstyle:{
+          color:'red'
+        },
+        list:[
+          {
+            name:'刘金鹏',
+            age:22
+          },{
+            name:'刘晓艺',
+            age:18
+          }
+        ]
+      },
+      methods:{
+        fun:function(){
+          alert('success')
+        }
+      }
+    })
+    </script>
+    </body>
+</html>

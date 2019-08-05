@@ -1,0 +1,25 @@
+.ant-carousel .slick-slide {
+  text-align: center;
+  height: 270px;
+  line-height: 270px;
+  background: #364d79;
+  overflow: hidden;
+}
+.ant-carousel{
+  width: 625px;
+}
+img{
+ max-width:100%;
+ max-height:100%;
+}
+/* //     <Carousel autoplay='true'>
+//   <div>
+//     <img src={no1} />
+//   </div>
+//   <div>
+//     <img src={no2} />
+//   </div>
+//   <div>
+//     <img src={no3} />
+//   </div>
+// </Carousel> */

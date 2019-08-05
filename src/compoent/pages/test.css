@@ -1,0 +1,26 @@
+.test li{
+    list-style: none;
+    background: #2ecc71;
+    margin-top:10px ;
+    padding: 20px;
+    
+    width: 200px
+}
+.test li:hover{
+    background: #eee
+}
+.test .testA{
+    display: inline-block;
+    margin-left: 40px;
+    width: 100px;
+    height: 30px;
+    background: #eee;
+    color:#34495e
+}
+.test{
+    position: relative;
+    width: 200px;
+}
+.hiddd{
+    visibility: hidden;
+}

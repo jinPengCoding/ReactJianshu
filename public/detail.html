@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Test</title>
+  </head>
+  <body>
+    <div>
+      <h1>Next</h1>
+    </div>
+    <script type="text/javascript">
+      function splitWd(url,param){
+        if(!/\?/.test(url)){
+          return null
+        }
+        var fa = url.split('?')[1]
+        console.log(fa)
+        var sa = fa.split('&')//现在是一个数组
+        console.log(sa)
+        for(var i = 0;i<sa.length;i++){
+          if(sa[i].split('=')[0] == param){
+            console.log(sa[i].split('=')[1])
+          }
+          return null
+        }
+      }
+      splitWd('http://www.baidu.com?wd=javascript&name=liujinpeng','wd')
+      // 接受两个参数,第一个是url第二个是params
+    </script>
+  </body>
+</html>
